@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TechStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="header-main">
+        <div class="container">
+            <h1 class="logo">TechStore</h1>
+            <p class="tagline">La mejor tecnología a tu alcance</p>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="nav-main">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="productos.html" class="nav-link">Productos</a></li>
+                <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                <li><a href="registro.html" class="nav-link">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Título de Página -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contacto</h1>
+                <p class="page-subtitle">Estamos aquí para ayudarte con cualquier consulta</p>
+            </div>
+        </section>
+
+        <!-- Información de Contacto -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Información Principal -->
+                    <div class="contact-info">
+                        <h2 class="section-title">Información de Contacto</h2>
+                        <div class="contact-item">
+                            <h3 class="contact-item-title">📍 Dirección</h3>
+                            <p class="contact-item-desc">Calle Tecnología #123, Ciudad Digital, CP 12345</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-item-title">📞 Teléfono</h3>
+                            <p class="contact-item-desc">+1 234 567 890</p>
+                            <p class="contact-item-desc">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                            <p class="contact-item-desc">Sábados: 10:00 AM - 2:00 PM</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-item-title">📧 Email</h3>
+                            <p class="contact-item-desc">
+                                <a href="mailto:info@techstore.com" class="contact-link">info@techstore.com</a>
+                            </p>
+                            <p class="contact-item-desc">
+                                <a href="mailto:soporte@techstore.com" class="contact-link">soporte@techstore.com</a>
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-item-title">💬 WhatsApp</h3>
+                            <p class="contact-item-desc">
+                                <a href="https://wa.me/1234567890" class="contact-link" target="_blank">
+                                    +1 234 567 890
+                                </a>
+                            </p>
+                            <p class="contact-item-desc">Respuesta inmediata durante horario laboral</p>
+                        </div>
+                    </div>
+
+                    <!-- Imagen y Mapa -->
+                    <div class="contact-visual">
+                        <img src="img/perfil.png" alt="Tienda TechStore" class="contact-image">
+                        <div class="map-placeholder">
+                            <h3 class="map-title">🗺️ Ubicación</h3>
+                            <p class="map-desc">Encuéntranos en el corazón de la ciudad</p>
+                            <a href="#" class="btn-secondary">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="contact-form-section">
+            <div class="container">
+                <h2 class="section-title">Envíanos un Mensaje</h2>
+                <p class="section-desc">Completa el formulario y te responderemos a la brevedad</p>
+                
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto" class="form-label">Asunto *</label>
+                            <select id="asunto" name="asunto" class="form-select" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="consulta">Consulta General</option>
+                                <option value="soporte">Soporte Técnico</option>
+                                <option value="venta">Ventas</option>
+                                <option value="garantia">Garantía</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" class="form-textarea" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                        <button type="reset" class="btn-secondary">Limpiar Formulario</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Cuáles son los métodos de pago?</h3>
+                        <p class="faq-answer">Aceptamos tarjetas de crédito/débito, PayPal, transferencia bancaria y pago en efectivo en nuestras tiendas físicas.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Cuánto tiempo toma el envío?</h3>
+                        <p class="faq-answer">Los envíos nacionales tardan entre 24-48 horas. Envíos internacionales entre 5-7 días hábiles.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Ofrecen garantía en los productos?</h3>
+                        <p class="faq-answer">Sí, todos nuestros productos incluyen garantía oficial del fabricante de 1 a 2 años según el producto.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Puedo devolver un producto?</h3>
+                        <p class="faq-answer">Aceptamos devoluciones dentro de los 30 días posteriores a la compra, siempre que el producto esté en su estado original.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Redes Sociales -->
+        <section class="social-section">
+            <div class="container">
+                <h2 class="section-title">Síguenos en Redes Sociales</h2>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook">
+                        <span class="social-icon">📘</span>
+                        <span class="social-text">Facebook</span>
+                    </a>
+                    <a href="#" class="social-link twitter">
+                        <span class="social-icon">🐦</span>
+                        <span class="social-text">Twitter</span>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <span class="social-icon">📷</span>
+                        <span class="social-text">Instagram</span>
+                    </a>
+                    <a href="#" class="social-link youtube">
+                        <span class="social-icon">📺</span>
+                        <span class="social-text">YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">TechStore</h3>
+                    <p class="footer-text">Tu tienda de confianza en tecnología</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contacto</h3>
+                    <p class="footer-text">Email: info@techstore.com</p>
+                    <p class="footer-text">Tel: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

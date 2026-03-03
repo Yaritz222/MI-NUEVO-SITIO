@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - TechStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="header-main">
+        <div class="container">
+            <h1 class="logo">TechStore</h1>
+            <p class="tagline">La mejor tecnología a tu alcance</p>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="nav-main">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="productos.html" class="nav-link active">Productos</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="registro.html" class="nav-link">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Título de Página -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Nuestros Productos</h1>
+                <p class="page-subtitle">Descubre la última tecnología en gadgets y dispositivos electrónicos</p>
+            </div>
+        </section>
+
+        <!-- Categorías -->
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="section-title">Categorías</h2>
+                <ul class="categories-list">
+                    <li><a href="#audifonos" class="category-link">🎧 Audífonos</a></li>
+                    <li><a href="#teclados" class="category-link">⌨️ Teclados</a></li>
+                    <li><a href="#smartphones" class="category-link">📱 Smartphones</a></li>
+                    <li><a href="#smartwatches" class="category-link">⌚ Smartwatches</a></li>
+                    <li><a href="#gaming" class="category-link">🎮 Gaming</a></li>
+                    <li><a href="#accesorios" class="category-link">🔌 Accesorios</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tabla de Productos -->
+        <section class="products-table-section">
+            <div class="container">
+                <h2 class="section-title">Catálogo de Productos</h2>
+                <div class="table-wrapper">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="img/productos/prod1.jpg" alt="Audífonos Pro" class="table-image"></td>
+                                <td class="product-name-cell">Audífonos Wireless Pro</td>
+                                <td><span class="category-badge">Audífonos</span></td>
+                                <td class="price-cell">$299.99</td>
+                                <td><span class="stock-badge in-stock">Disponible</span></td>
+                                <td><button class="btn-table">Comprar</button></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/productos/prod2.jpg" alt="Teclado RGB" class="table-image"></td>
+                                <td class="product-name-cell">Teclado Mecánico RGB</td>
+                                <td><span class="category-badge">Teclados</span></td>
+                                <td class="price-cell">$149.99</td>
+                                <td><span class="stock-badge in-stock">Disponible</span></td>
+                                <td><button class="btn-table">Comprar</button></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/productos/prod3.jpg" alt="Smartwatch Ultra" class="table-image"></td>
+                                <td class="product-name-cell">Smartwatch Ultra</td>
+                                <td><span class="category-badge">Smartwatches</span></td>
+                                <td class="price-cell">$399.99</td>
+                                <td><span class="stock-badge low-stock">Últimas 3 unidades</span></td>
+                                <td><button class="btn-table">Comprar</button></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/productos/prod1.jpg" alt="Gaming Headset" class="table-image"></td>
+                                <td class="product-name-cell">Gaming Headset 7.1</td>
+                                <td><span class="category-badge">Gaming</span></td>
+                                <td class="price-cell">$189.99</td>
+                                <td><span class="stock-badge in-stock">Disponible</span></td>
+                                <td><button class="btn-table">Comprar</button></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/productos/prod2.jpg" alt="Smartphone Pro" class="table-image"></td>
+                                <td class="product-name-cell">Smartphone Pro Max</td>
+                                <td><span class="category-badge">Smartphones</span></td>
+                                <td class="price-cell">$899.99</td>
+                                <td><span class="stock-badge in-stock">Disponible</span></td>
+                                <td><button class="btn-table">Comprar</button></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/productos/prod3.jpg" alt="Cargador Rápido" class="table-image"></td>
+                                <td class="product-name-cell">Cargador Rápido 65W</td>
+                                <td><span class="category-badge">Accesorios</span></td>
+                                <td class="price-cell">$49.99</td>
+                                <td><span class="stock-badge out-stock">Agotado</span></td>
+                                <td><button class="btn-table disabled" disabled>Agotado</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grilla de Productos -->
+        <section class="products-grid-section">
+            <div class="container">
+                <h2 class="section-title">Todos los Productos</h2>
+                <div class="products-grid">
+                    <!-- Audífonos -->
+                    <article class="product-card" id="audifonos">
+                        <img src="img/productos/prod1.jpg" alt="Audífonos Wireless" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Audífonos Wireless Pro</h3>
+                            <p class="product-desc">Cancelación de ruido activa y 30 horas de batería</p>
+                            <div class="product-meta">
+                                <span class="product-price">$299.99</span>
+                                <span class="product-category">Audífonos</span>
+                            </div>
+                            <button class="btn-add-cart">Añadir al Carrito</button>
+                        </div>
+                    </article>
+
+                    <!-- Teclados -->
+                    <article class="product-card" id="teclados">
+                        <img src="img/productos/prod2.jpg" alt="Teclado Mecánico" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Teclado Mecánico RGB</h3>
+                            <p class="product-desc">Switches blue, iluminación personalizable</p>
+                            <div class="product-meta">
+                                <span class="product-price">$149.99</span>
+                                <span class="product-category">Teclados</span>
+                            </div>
+                            <button class="btn-add-cart">Añadir al Carrito</button>
+                        </div>
+                    </article>
+
+                    <!-- Smartwatches -->
+                    <article class="product-card" id="smartwatches">
+                        <img src="img/productos/prod3.jpg" alt="Smartwatch" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Smartwatch Ultra</h3>
+                            <p class="product-desc">Monitor de actividad, GPS y notificaciones</p>
+                            <div class="product-meta">
+                                <span class="product-price">$399.99</span>
+                                <span class="product-category">Smartwatches</span>
+                            </div>
+                            <button class="btn-add-cart">Añadir al Carrito</button>
+                        </div>
+                    </article>
+
+                    <!-- Gaming -->
+                    <article class="product-card" id="gaming">
+                        <img src="img/productos/prod1.jpg" alt="Gaming Headset" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Gaming Headset 7.1</h3>
+                            <p class="product-desc">Sonido envolvente y micrófono profesional</p>
+                            <div class="product-meta">
+                                <span class="product-price">$189.99</span>
+                                <span class="product-category">Gaming</span>
+                            </div>
+                            <button class="btn-add-cart">Añadir al Carrito</button>
+                        </div>
+                    </article>
+
+                    <!-- Smartphones -->
+                    <article class="product-card" id="smartphones">
+                        <img src="img/productos/prod2.jpg" alt="Smartphone" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Smartphone Pro Max</h3>
+                            <p class="product-desc">Pantalla 6.7", 5G, 256GB storage</p>
+                            <div class="product-meta">
+                                <span class="product-price">$899.99</span>
+                                <span class="product-category">Smartphones</span>
+                            </div>
+                            <button class="btn-add-cart">Añadir al Carrito</button>
+                        </div>
+                    </article>
+
+                    <!-- Accesorios -->
+                    <article class="product-card" id="accesorios">
+                        <img src="img/productos/prod3.jpg" alt="Cargador" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Cargador Rápido 65W</h3>
+                            <p class="product-desc">USB-C, compatible con todos los dispositivos</p>
+                            <div class="product-meta">
+                                <span class="product-price">$49.99</span>
+                                <span class="product-category">Accesorios</span>
+                            </div>
+                            <button class="btn-add-cart disabled" disabled>Agotado</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">TechStore</h3>
+                    <p class="footer-text">Tu tienda de confianza en tecnología</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contacto</h3>
+                    <p class="footer-text">Email: info@techstore.com</p>
+                    <p class="footer-text">Tel: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

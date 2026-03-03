@@ -1,0 +1,641 @@
+/* ========================================
+   ESTILOS RESPONSIVE - TECHSTORE
+   ======================================== */
+
+/* ===== MÓVIL (<768px) ===== */
+@media screen and (max-width: 767px) {
+    /* Container */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Header */
+    .header-main .logo {
+        font-size: 2rem;
+    }
+
+    .header-main .tagline {
+        font-size: 1rem;
+    }
+
+    /* Navegación - Menú Vertical */
+    .nav-menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-link {
+        padding: 0.8rem 1rem;
+        text-align: center;
+        border-bottom: 1px solid #34495e;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background-color: #34495e;
+        transform: none;
+    }
+
+    /* Banner */
+    .banner-image {
+        height: 250px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-text {
+        font-size: 1rem;
+    }
+
+    /* Botones */
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-large {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    /* Secciones */
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    /* Intro Section */
+    .intro-section {
+        padding: 2rem 1rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    /* Productos - 1 Columna */
+    .featured-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Tabla de Productos */
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .products-table {
+        font-size: 0.9rem;
+    }
+
+    .products-table th,
+    .products-table td {
+        padding: 0.5rem;
+    }
+
+    .table-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Categorías */
+    .categories-list {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .category-link {
+        text-align: center;
+    }
+
+    /* Contacto */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-image {
+        max-width: 200px;
+        height: 150px;
+    }
+
+    /* Formulario */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+
+    /* FAQ */
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .faq-item {
+        padding: 1rem;
+    }
+
+    /* Redes Sociales */
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .social-link {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+    }
+
+    /* Registro */
+    .registration-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .registration-form {
+        max-width: 100%;
+    }
+
+    .benefits-list {
+        gap: 1rem;
+    }
+
+    .benefit-item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .benefit-icon {
+        font-size: 1.5rem;
+        min-width: 40px;
+    }
+
+    /* Seguridad */
+    .security-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .security-item {
+        padding: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    /* Imágenes Fluidas */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Sin Scroll Horizontal */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Ajustes de fuentes */
+    .product-name {
+        font-size: 1.1rem;
+    }
+
+    .product-price {
+        font-size: 1.3rem;
+    }
+
+    .banner-overlay {
+        padding: 1rem;
+    }
+}
+
+/* ===== TABLET (768px - 1023px) ===== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Container */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Header */
+    .header-main .logo {
+        font-size: 2.2rem;
+    }
+
+    /* Banner */
+    .banner-image {
+        height: 300px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    /* Productos - 2 Columnas */
+    .featured-grid {
+        gap: 1.5rem;
+    }
+
+    .product-card {
+        width: 280px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Features */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Contacto */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-visual {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Formulario */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    /* FAQ */
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Registro */
+    .registration-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .registration-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .benefits-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Seguridad */
+    .security-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* Categorías */
+    .categories-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-link {
+        flex: 0 1 calc(50% - 0.5rem);
+        text-align: center;
+    }
+
+    /* Tabla */
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    /* Redes Sociales */
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-link {
+        flex: 0 1 calc(50% - 1rem);
+    }
+}
+
+/* ===== DESKTOP (≥1024px) ===== */
+@media screen and (min-width: 1024px) {
+    /* CSS Grid para múltiples columnas */
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    /* Contacto Grid mejorado */
+    .contact-grid {
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+    }
+
+    /* FAQ Grid */
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* Registro Grid */
+    .registration-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .benefits-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Seguridad Grid */
+    .security-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    /* Footer Grid */
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    /* Categorías Grid */
+    .categories-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    /* Formulario mejorado */
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* Banner más grande */
+    .banner-image {
+        height: 450px;
+    }
+
+    .banner-title {
+        font-size: 3.5rem;
+    }
+
+    .banner-text {
+        font-size: 1.4rem;
+    }
+
+    /* Efectos hover mejorados */
+    .product-card:hover {
+        transform: translateY(-15px) scale(1.02);
+    }
+
+    .feature-card:hover {
+        transform: translateY(-8px);
+    }
+
+    /* Animaciones suaves */
+    .nav-link {
+        transition: all 0.4s ease;
+    }
+
+    .btn-primary {
+        transition: all 0.4s ease;
+    }
+
+    .product-card {
+        transition: all 0.4s ease;
+    }
+}
+
+/* ===== DESKTOP GRANDE (≥1440px) ===== */
+@media screen and (min-width: 1440px) {
+    /* Container más grande */
+    .container {
+        max-width: 1400px;
+    }
+
+    /* Grid más amplio */
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Banner más grande */
+    .banner-image {
+        height: 500px;
+    }
+
+    .banner-title {
+        font-size: 4rem;
+    }
+
+    /* Tipografía más grande */
+    .page-title {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    /* Espaciado aumentado */
+    .main-content {
+        padding: 3rem 0;
+    }
+
+    .product-card {
+        padding: 2rem;
+    }
+
+    .feature-card {
+        padding: 2.5rem;
+    }
+}
+
+/* ===== ORIENTACIÓN LANDSCAPE MÓVIL ===== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    /* Ajustes para pantallas horizontales pequeñas */
+    .header-main {
+        padding: 1rem 0;
+    }
+
+    .banner-image {
+        height: 200px;
+    }
+
+    .banner-title {
+        font-size: 1.8rem;
+    }
+
+    .banner-text {
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    /* Reducir padding en secciones */
+    .intro-section,
+    .contact-form-section,
+    .registration-section {
+        padding: 1.5rem;
+    }
+}
+
+/* ===== IMPRESIÓN ===== */
+@media print {
+    /* Ocultar elementos innecesarios */
+    .nav-main,
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline,
+    .btn-add-cart,
+    .btn-table,
+    .social-section,
+    .footer-main {
+        display: none !important;
+    }
+
+    /* Ajustes de impresión */
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    /* Productos en impresión */
+    .product-card {
+        break-inside: avoid;
+        border: 1px solid #ddd;
+        margin-bottom: 1rem;
+    }
+
+    /* Títulos en impresión */
+    .page-title,
+    .section-title {
+        color: #000;
+        page-break-after: avoid;
+    }
+}
+
+/* ===== ACCESIBILIDAD ===== */
+@media (prefers-reduced-motion: reduce) {
+    /* Reducir animaciones para usuarios que prefieren menos movimiento */
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== MODO OSCURTO (si el navegador lo soporta) ===== */
+@media (prefers-color-scheme: dark) {
+    /* Estos estilos se aplicarán si el usuario prefiere modo oscuro */
+    /* Nota: Implementación opcional para mejorar experiencia de usuario */
+}
+
+/* ===== HIGH DPI / RETINA ===== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimizaciones para pantallas de alta densidad */
+    .banner-image {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}

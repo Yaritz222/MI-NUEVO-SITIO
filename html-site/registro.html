@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - TechStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="header-main">
+        <div class="container">
+            <h1 class="logo">TechStore</h1>
+            <p class="tagline">La mejor tecnología a tu alcance</p>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="nav-main">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="productos.html" class="nav-link">Productos</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="registro.html" class="nav-link active">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Título de Página -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Crear Cuenta</h1>
+                <p class="page-subtitle">Únete a TechStore y accede a ofertas exclusivas</p>
+            </div>
+        </section>
+
+        <!-- Formulario de Registro -->
+        <section class="registration-section">
+            <div class="container">
+                <div class="registration-container">
+                    <!-- Formulario -->
+                    <div class="registration-form">
+                        <h2 class="form-title">Información Personal</h2>
+                        <p class="form-desc">Completa tus datos para crear tu cuenta</p>
+                        
+                        <form id="registrationForm" class="form-main">
+                            <!-- Nombre Completo -->
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">Nombre Completo *</label>
+                                <input 
+                                    type="text" 
+                                    id="nombre" 
+                                    name="nombre" 
+                                    class="form-input" 
+                                    placeholder="Ingresa tu nombre completo"
+                                    required
+                                >
+                                <span class="form-error" id="nombreError">El nombre es obligatorio</span>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    placeholder="tuemail@ejemplo.com"
+                                    required
+                                >
+                                <span class="form-error" id="emailError">Ingresa un email válido</span>
+                            </div>
+
+                            <!-- Teléfono -->
+                            <div class="form-group">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input 
+                                    type="tel" 
+                                    id="telefono" 
+                                    name="telefono" 
+                                    class="form-input" 
+                                    placeholder="+1 234 567 890"
+                                >
+                            </div>
+
+                            <!-- Edad -->
+                            <div class="form-group">
+                                <label for="edad" class="form-label">Edad *</label>
+                                <input 
+                                    type="number" 
+                                    id="edad" 
+                                    name="edad" 
+                                    class="form-input" 
+                                    placeholder="18"
+                                    min="18"
+                                    max="120"
+                                    required
+                                >
+                                <span class="form-error" id="edadError">Debes ser mayor de 18 años</span>
+                            </div>
+
+                            <!-- Contraseña -->
+                            <div class="form-group">
+                                <label for="password" class="form-label">Contraseña *</label>
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    name="password" 
+                                    class="form-input" 
+                                    placeholder="Mínimo 8 caracteres"
+                                    minlength="8"
+                                    required
+                                >
+                                <span class="form-error" id="passwordError">La contraseña debe tener al menos 8 caracteres</span>
+                            </div>
+
+                            <!-- Confirmar Contraseña -->
+                            <div class="form-group">
+                                <label for="confirmPassword" class="form-label">Confirmar Contraseña *</label>
+                                <input 
+                                    type="password" 
+                                    id="confirmPassword" 
+                                    name="confirmPassword" 
+                                    class="form-input" 
+                                    placeholder="Repite tu contraseña"
+                                    minlength="8"
+                                    required
+                                >
+                                <span class="form-error" id="confirmPasswordError">Las contraseñas no coinciden</span>
+                            </div>
+
+                            <!-- Términos y Condiciones -->
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terminos" name="terminos" class="form-checkbox" required>
+                                <label for="terminos" class="checkbox-label">
+                                    Acepto los <a href="#" class="form-link">términos y condiciones</a> 
+                                    y la <a href="#" class="form-link">política de privacidad</a>
+                                </label>
+                            </div>
+
+                            <!-- Newsletter -->
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                <label for="newsletter" class="checkbox-label">
+                                    Quiero recibir ofertas exclusivas y novedades por email
+                                </label>
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary btn-large">Crear Cuenta</button>
+                                <button type="reset" class="btn-secondary btn-large">Limpiar Formulario</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Beneficios -->
+                    <div class="registration-benefits">
+                        <h2 class="benefits-title">¿Por qué registrarte?</h2>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🎁</div>
+                                <div class="benefit-content">
+                                    <h3 class="benefit-name">Ofertas Exclusivas</h3>
+                                    <p class="benefit-desc">Acceso a descuentos especiales solo para miembros</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🚀</div>
+                                <div class="benefit-content">
+                                    <h3 class="benefit-name">Envío Gratis</h3>
+                                    <p class="benefit-desc">En pedidos mayores a $50 para miembros registrados</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">📦</div>
+                                <div class="benefit-content">
+                                    <h3 class="benefit-name">Seguimiento de Pedidos</h3>
+                                    <p class="benefit-desc">Revisa el estado de tus compras en tiempo real</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">💾</div>
+                                <div class="benefit-content">
+                                    <h3 class="benefit-name">Lista de Deseos</h3>
+                                    <p class="benefit-desc">Guarda tus productos favoritos para comprar después</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🔔</div>
+                                <div class="benefit-content">
+                                    <h3 class="benefit-name">Notificaciones</h3>
+                                    <p class="benefit-desc">Recibe alertas de nuevos productos y ofertas</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🎮</div>
+                                <div class="benefit-content">
+                                    <h3 class="benefit-name">Programa Lealtad</h3>
+                                    <p class="benefit-desc">Acumula puntos con cada compra y canjéalos por descuentos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ya tienes cuenta -->
+                        <div class="login-prompt">
+                            <p class="login-text">¿Ya tienes una cuenta?</p>
+                            <a href="#" class="btn-outline">Iniciar Sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seguridad -->
+        <section class="security-section">
+            <div class="container">
+                <h2 class="section-title">Tu Seguridad es Nuestra Prioridad</h2>
+                <div class="security-grid">
+                    <div class="security-item">
+                        <h3 class="security-title">🔒 Datos Encriptados</h3>
+                        <p class="security-desc">Toda tu información está protegida con encriptación SSL de 256 bits</p>
+                    </div>
+                    <div class="security-item">
+                        <h3 class="security-title">🛡️ Protección contra Fraude</h3>
+                        <p class="security-desc">Sistema avanzado de detección de actividades sospechosas</p>
+                    </div>
+                    <div class="security-item">
+                        <h3 class="security-title">🔐 Privacidad Garantizada</h3>
+                        <p class="security-desc">Nunca compartimos tu información con terceros sin tu consentimiento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">TechStore</h3>
+                    <p class="footer-text">Tu tienda de confianza en tecnología</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contacto</h3>
+                    <p class="footer-text">Email: info@techstore.com</p>
+                    <p class="footer-text">Tel: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para validación -->
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Obtener valores
+            const nombre = document.getElementById('nombre').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const edad = document.getElementById('edad').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const terminos = document.getElementById('terminos').checked;
+            
+            // Resetear errores
+            document.querySelectorAll('.form-error').forEach(error => {
+                error.style.display = 'none';
+            });
+            
+            let isValid = true;
+            
+            // Validar nombre
+            if (nombre.length < 3) {
+                document.getElementById('nombreError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validar email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validar edad
+            if (edad < 18 || edad > 120) {
+                document.getElementById('edadError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validar contraseña
+            if (password.length < 8) {
+                document.getElementById('passwordError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validar confirmación de contraseña
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validar términos
+            if (!terminos) {
+                alert('Debes aceptar los términos y condiciones');
+                isValid = false;
+            }
+            
+            // Si todo es válido
+            if (isValid) {
+                alert('¡Cuenta creada exitosamente! Bienvenido a TechStore.');
+                this.reset();
+                // Aquí podrías redirigir o hacer otra acción
+            }
+        });
+    </script>
+</body>
+</html>
