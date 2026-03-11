@@ -1,7 +1,7 @@
 # TechStore - Tienda de Tecnología
 
 Un sitio web ecommerce completo y moderno para la venta de productos tecnológicos.
-: ![image alt]( Aquí escriben el permalink de la imagen )
+: ![image alt](https://github.com/Yaritz222/MI-NUEVO-SITIO/blob/05d225b16e408a8b921e2bd6a910a9881bcd0705/Captura%20de%20pantalla%202026-03-10%20200801.png)
 
 ## 📁 Estructura del Proyecto
 
