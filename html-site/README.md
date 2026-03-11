@@ -26,7 +26,7 @@ html-site/
 ```
 
 ## 🎨 Características Técnicas
-
+![alt text](image.png)
 ### HTML5 Semántico
 - Header con navegación principal
 - Etiquetas semánticas correctas (`<main>`, `<section>`, `<article>`, `<footer>`)
